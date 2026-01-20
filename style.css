@@ -1,0 +1,16 @@
+p{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+p{color:rgb(255, 93, 180)}
+.text-box{margin: 20px;
+padding: 5px;}
+.text-box{text-align: center;}
+body{color:rgb(143, 253, 143); background-color: ivory;}
+body{padding:30px; margin:30px;}
+.img{margin: auto;}
+.image{width:auto; height:350px; position:relative; left: 50px; top:50px;}
+.video{padding:20%;}
+.headings{font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;}
+.para1{text-align: center;}
+.para1{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+a{color: rgb(219, 157, 255);}
+.hello{color: rgb(255, 93, 180); font-size: 50px;}
+
