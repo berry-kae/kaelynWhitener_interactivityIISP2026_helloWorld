@@ -6,11 +6,72 @@ padding: 5px;}
 body{color:rgb(143, 253, 143); background-color: ivory;}
 body{padding:30px; margin:30px;}
 .img{margin: auto;}
-.image{width:auto; height:350px; position:relative; left: 50px; top:50px;}
-.video{padding:20%;}
+.image{width:auto; height:350px; position:relative; left: 5px; top:50px;}
+
+.video{padding:0%;left: 0px;}
 .headings{font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;}
 .para1{text-align: center;}
 .para1{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 a{color: rgb(219, 157, 255);}
-.hello{color: rgb(255, 93, 180); font-size: 50px;}
-.collage{position:absolute;}
+.hello{color: rgb(255, 93, 180); font-size: 50px;
+    animation-name:changeBG;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+.hello:hover{transform:rotate(125deg)}
+.hello{
+  font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.collage{position:absolute;color: lightblue;}
+.cropContainer{position:relative;overflow:hidden;
+    animation-name: spin;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-direction: normal;
+    animation-timing-function:linear;
+}
+.container{position: relative;width:100vw;height:200px;background-color:lightpink;
+}
+.center{position:absolute; left: 50%; transform:translate(-50%,0);top:50%;margin:0;color:ghostwhite;
+}
+.display-exp{display:flex;
+}
+.display-exp div{flex:1;color:ghostwhite;padding:20px;
+}
+.flex-container{display:flex;width:100vw;background-color: lightpink;height:500px;justify-content:center;align-items: center;
+}
+h1,h2,h3,h4{
+  font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+h1,:hover{transform:scaleY(-1)}
+
+@keyframes changeBG{
+    0% {background-color:crimson}
+    25% {background-color:rgb(220, 93, 20)}
+    50% {background-color:rgb(220, 207, 20)}
+    75% {background-color:rgb(33, 220, 20)}
+    100% {background-color:blueviolet}
+}
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
