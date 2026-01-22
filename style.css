@@ -62,7 +62,7 @@ h1,h2,h3,h4{
     "ELXP" 0;
 }
 
-h1,:hover{transform:scaleY(-1)}
+h1:hover{transform:scaleY(-1)}
 
 @keyframes changeBG{
     0% {background-color:crimson}
