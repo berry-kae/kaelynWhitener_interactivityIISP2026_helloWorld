@@ -1,0 +1,26 @@
+p{font-family: 'Courier New', Courier, monospace;
+color:rgb(216, 13, 135);
+background-color: rgb(247, 193, 220);}
+body{background-color: rgb(154, 220, 167);}
+p{padding:10px; margin: 0px;}
+body{padding:30px; margin: 30px;}
+.hello{font-family:Georgia, 'Times New Roman', Times, serif;
+color:rgb(44, 95, 55)}
+.hello:hover{transform:scale(1.5);}
+.image{width:500px;height:300px;position:relative; left: 100px; top:0px;}
+.flex-container{display:flex;width:1400px;background-color: rgb(68, 143, 67);height:500px;justify-content:center;align-items: center;
+    animation-name: changeContainer;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;}
+.flex-container p{margin-left: -400px;}
+@keyframes changeContainer{
+    0% {background-color:rgb(254, 181, 195)}
+    25% {background-color:rgb(249, 195, 163)}
+    50% {background-color:rgb(241, 235, 154)}
+    75% {background-color:rgb(174, 251, 168)}
+    100% {background-color:rgb(162, 180, 251)}
+}
+marquee{font-family: 'Courier New', Courier, monospace; 
+    font-weight: bold; 
+    color: rgb(43, 120, 52);}
