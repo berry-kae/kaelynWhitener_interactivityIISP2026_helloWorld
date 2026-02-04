@@ -7,12 +7,28 @@
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 
-<button onclick="confirm('can you see me?')" id="colorChangeButton"> hello! 
+<button onclick="confirm('can you see me?')" id="colorChangeButton"> hello! </button>
+<button onclick="alert('here I am!')" id="colorChangeButton2">click here!</button>
+<button onclick="document.getElementById('your name').innerHTML=
+ prompt('what is your name?','kae');" id="colorChangeButton3">input name here</button>
+<input type="text" onkeypress="typeKey()">
+<script>
+    function typeKey(){alert("did you type in my box?!"); id="colorChangeButton"}
+</script>
+<input type="search" id="searchInput" onsearch="searchType()">
+<p id="searchBar"></p>
+<script>
+    function searchType(){let x=document.getElementById("searchType");
+        document.getElementById("searchBar").innerHTML="search for something in this box: "+ x.value;}
+</script>
 
-</button>
+
+
 
 <style>
     #colorChangeButton{background-color:pink;}
+    #colorChangeButton2{background-color:orange;}
+    #colorChangeButton3{background-color: yellow;}
 </style>
 
 
